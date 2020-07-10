@@ -109,4 +109,11 @@ def main():
             break
     if isBoardFull(board) and not(draw):
         print('Tie Game!')
-main()
+    
+while True:
+    main()
+    decision = input('Play again?["y" or "n"]: ')
+    if decision == 'n':
+        break
+    else:
+        board = [' ' for x in range(10)]
